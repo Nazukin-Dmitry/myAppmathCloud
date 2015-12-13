@@ -2,7 +2,6 @@ package servlets;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -11,7 +10,7 @@ import java.io.IOException;
 /**
  * Created by 1 on 12.12.2015.
  */
-@WebServlet("/signs/result")
+//@WebServlet("/signs/result")
 public class MyServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
@@ -67,7 +66,7 @@ public class MyServlet extends HttpServlet {
         response.setContentType("text/html");
 
 
-        RequestDispatcher dispatcher = request.getRequestDispatcher("/index.jsp");
+        RequestDispatcher dispatcher = request.getRequestDispatcher("/index1.jsp");
         dispatcher.forward(request, response);
     }
 }
